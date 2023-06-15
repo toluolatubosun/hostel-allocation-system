@@ -1,0 +1,2024 @@
+{
+	"info": {
+		"_postman_id": "633629d9-a601-4f4c-84cb-c318781fda39",
+		"name": "Hostel API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"gender\": \"M\",\r\n    \"role\": \"admin\",\r\n    \"password\": \"password\",\r\n    \"name\": \"John Olatubosun\",\r\n    \"customIdentifier\": \"admin@mtu.edu.ng\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/auth/register",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register Student",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"gender\": \"M\",\r\n    \"role\": \"student\",\r\n    \"password\": \"password\",\r\n    \"name\": \"John Olatubosun\",\r\n    \"customIdentifier\": \"19010301047\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/auth/register",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "344"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"158-RAsHq7t5hh9zO37mFB5UiQupwpQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 14:55:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User created successfully\",\n    \"data\": {\n        \"name\": \"John Olatubosun\",\n        \"customIdentifier\": \"19010301047\",\n        \"role\": \"student\",\n        \"gender\": \"M\",\n        \"password\": \"$2a$10$oOGqsZcFPwrlTgHIBP2CaOkGyGED4ScXgmnSTE9Z8b1pSY9dvXNWK\",\n        \"_id\": \"648b267618854158a39a6bf4\",\n        \"createdAt\": \"2023-06-15T14:55:50.293Z\",\n        \"updatedAt\": \"2023-06-15T14:55:50.293Z\",\n        \"__v\": 0\n    },\n    \"success\": true\n}"
+						},
+						{
+							"name": "Register Admin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"gender\": \"M\",\r\n    \"role\": \"admin\",\r\n    \"password\": \"password\",\r\n    \"name\": \"John Olatubosun\",\r\n    \"customIdentifier\": \"admin@mtu.edu.ng\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/auth/register",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "347"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15b-+jBf/KEnJvKlfDYZLwZLZOePTzQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 14:56:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User created successfully\",\n    \"data\": {\n        \"name\": \"John Olatubosun\",\n        \"customIdentifier\": \"admin@mtu.edu.ng\",\n        \"role\": \"admin\",\n        \"gender\": \"M\",\n        \"password\": \"$2a$10$lAx8g6VUXlE74vivU3sH6uaL.qvqFyB8x3ihyx0CG7gM1ksDChuBu\",\n        \"_id\": \"648b269a18854158a39a6bf7\",\n        \"createdAt\": \"2023-06-15T14:56:26.290Z\",\n        \"updatedAt\": \"2023-06-15T14:56:26.290Z\",\n        \"__v\": 0\n    },\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"password\",\r\n    \"customIdentifier\": \"admin@mtu.edu.ng\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/auth/login",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"password\",\r\n    \"customIdentifier\": \"admin@mtu.edu.ng\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/auth/login",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "526"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"20e-F/fchPjyepkjz650LmLHoSbtgds\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 14:58:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Login successful\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OGIyNjlhMTg4NTQxNThhMzlhNmJmNyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4Njg0MTA4Mn0.mgkbBMRtWZKYQ-UzsjGGPnZoCzecE13lx3cJ-1eYMa8\",\n        \"user\": {\n            \"_id\": \"648b269a18854158a39a6bf7\",\n            \"name\": \"John Olatubosun\",\n            \"customIdentifier\": \"admin@mtu.edu.ng\",\n            \"role\": \"admin\",\n            \"gender\": \"M\",\n            \"password\": \"$2a$10$lAx8g6VUXlE74vivU3sH6uaL.qvqFyB8x3ihyx0CG7gM1ksDChuBu\",\n            \"createdAt\": \"2023-06-15T14:56:26.290Z\",\n            \"updatedAt\": \"2023-06-15T14:56:26.290Z\",\n            \"__v\": 0\n        }\n    },\n    \"success\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get User By Custom Identifier",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/user/c/:customIdentifier",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"c",
+								":customIdentifier"
+							],
+							"variable": [
+								{
+									"key": "customIdentifier",
+									"value": "19010301047"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get User By Custom Identifier",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/user/c/:customIdentifier",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"c",
+										":customIdentifier"
+									],
+									"variable": [
+										{
+											"key": "customIdentifier",
+											"value": "19010301047"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "329"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"149-1iKb+dfRe2loCSevldVkIHw9fr4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:42:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User found\",\n    \"data\": {\n        \"_id\": \"648b267618854158a39a6bf4\",\n        \"name\": \"John Olatubosun\",\n        \"customIdentifier\": \"19010301047\",\n        \"role\": \"student\",\n        \"gender\": \"M\",\n        \"password\": \"$2a$10$oOGqsZcFPwrlTgHIBP2CaOkGyGED4ScXgmnSTE9Z8b1pSY9dvXNWK\",\n        \"createdAt\": \"2023-06-15T14:55:50.293Z\",\n        \"updatedAt\": \"2023-06-15T14:55:50.293Z\",\n        \"__v\": 0\n    },\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Me - Logged In User Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/user/me",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"me"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Me - Logged In User",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/user/me",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"me"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "332"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14c-V77Dv6P+z2vPiUu05zajE5FjDVY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:00:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User found\",\n    \"data\": {\n        \"_id\": \"648b269a18854158a39a6bf7\",\n        \"name\": \"John Olatubosun\",\n        \"customIdentifier\": \"admin@mtu.edu.ng\",\n        \"role\": \"admin\",\n        \"gender\": \"M\",\n        \"password\": \"$2a$10$lAx8g6VUXlE74vivU3sH6uaL.qvqFyB8x3ihyx0CG7gM1ksDChuBu\",\n        \"createdAt\": \"2023-06-15T14:56:26.290Z\",\n        \"updatedAt\": \"2023-06-15T14:56:26.290Z\",\n        \"__v\": 0\n    },\n    \"success\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Room",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roomNumber\": \"5\",\r\n    \"capacity\": 6,\r\n    \"hostelName\": \"Daniel 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/room/create",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"room",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roomNumber\": \"A001\",\r\n    \"capacity\": 6,\r\n    \"hostelName\": \"New Daniel Hall\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/room/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"room",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "267"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10b-KygmYP2I/wVOWmtnNalE71d7aII\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:02:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Room created successfully\",\n    \"data\": {\n        \"roomNumber\": \"A001\",\n        \"hostelName\": \"New Daniel Hall\",\n        \"capacity\": 6,\n        \"currentOccupancy\": 0,\n        \"_id\": \"648b280718854158a39a6bff\",\n        \"createdAt\": \"2023-06-15T15:02:31.949Z\",\n        \"updatedAt\": \"2023-06-15T15:02:31.949Z\",\n        \"__v\": 0\n    },\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/room/all",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"room",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/room/all",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"room",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "468"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1d4-eGA6BJ5eG0VcCiS4x5m6NWZcw88\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:04:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Rooms retrieved successfully\",\n    \"data\": [\n        {\n            \"_id\": \"648b282818854158a39a6c03\",\n            \"roomNumber\": \"5\",\n            \"hostelName\": \"Daniel 1\",\n            \"capacity\": 6,\n            \"currentOccupancy\": 0,\n            \"createdAt\": \"2023-06-15T15:03:04.515Z\",\n            \"updatedAt\": \"2023-06-15T15:03:04.515Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"648b280718854158a39a6bff\",\n            \"roomNumber\": \"A001\",\n            \"hostelName\": \"New Daniel Hall\",\n            \"capacity\": 6,\n            \"currentOccupancy\": 0,\n            \"createdAt\": \"2023-06-15T15:02:31.949Z\",\n            \"updatedAt\": \"2023-06-15T15:02:31.949Z\",\n            \"__v\": 0\n        }\n    ],\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Available",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/room/all/available",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"room",
+								"all",
+								"available"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Available",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/room/all/available",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"room",
+										"all",
+										"available"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "664"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"298-StwxNyxo8HbcsycPcUsC7uYnU0I\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:14:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Rooms retrieved successfully\",\n    \"data\": [\n        {\n            \"_id\": \"648b2adb44341b7d64a6cde5\",\n            \"roomNumber\": \"3\",\n            \"hostelName\": \"Daniel 1\",\n            \"capacity\": 6,\n            \"currentOccupancy\": 0,\n            \"createdAt\": \"2023-06-15T15:03:04.515Z\",\n            \"updatedAt\": \"2023-06-15T15:03:04.515Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"648b282818854158a39a6c03\",\n            \"roomNumber\": \"5\",\n            \"hostelName\": \"Daniel 1\",\n            \"capacity\": 6,\n            \"currentOccupancy\": 0,\n            \"createdAt\": \"2023-06-15T15:03:04.515Z\",\n            \"updatedAt\": \"2023-06-15T15:03:04.515Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"648b280718854158a39a6bff\",\n            \"roomNumber\": \"A001\",\n            \"hostelName\": \"New Daniel Hall\",\n            \"capacity\": 6,\n            \"currentOccupancy\": 0,\n            \"createdAt\": \"2023-06-15T15:02:31.949Z\",\n            \"updatedAt\": \"2023-06-15T15:02:31.949Z\",\n            \"__v\": 0\n        }\n    ],\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All In Hostel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/room/all/:hostelName",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"room",
+								"all",
+								":hostelName"
+							],
+							"variable": [
+								{
+									"key": "hostelName",
+									"value": "New Daniel Hall"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All In Hostel",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/room/all/:hostelName",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"room",
+										"all",
+										":hostelName"
+									],
+									"variable": [
+										{
+											"key": "hostelName",
+											"value": "New Daniel Hall"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "272"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"110-qbVi8pwuAAaoVqSnHDFiV4qfNQM\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:46:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Rooms retrieved successfully\",\n    \"data\": [\n        {\n            \"_id\": \"648b280718854158a39a6bff\",\n            \"roomNumber\": \"A001\",\n            \"hostelName\": \"New Daniel Hall\",\n            \"capacity\": 3,\n            \"currentOccupancy\": 0,\n            \"createdAt\": \"2023-06-15T15:02:31.949Z\",\n            \"updatedAt\": \"2023-06-15T15:46:10.637Z\",\n            \"__v\": 0\n        }\n    ],\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Available In Hostel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/room/all/available/:hostelName",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"room",
+								"all",
+								"available",
+								":hostelName"
+							],
+							"variable": [
+								{
+									"key": "hostelName",
+									"value": "New Daniel Hall"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Available In Hostel",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/room/all/available/:hostelName",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"room",
+										"all",
+										"available",
+										":hostelName"
+									],
+									"variable": [
+										{
+											"key": "hostelName",
+											"value": "New Daniel Hall"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "272"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"110-qbVi8pwuAAaoVqSnHDFiV4qfNQM\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:47:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Rooms retrieved successfully\",\n    \"data\": [\n        {\n            \"_id\": \"648b280718854158a39a6bff\",\n            \"roomNumber\": \"A001\",\n            \"hostelName\": \"New Daniel Hall\",\n            \"capacity\": 3,\n            \"currentOccupancy\": 0,\n            \"createdAt\": \"2023-06-15T15:02:31.949Z\",\n            \"updatedAt\": \"2023-06-15T15:46:10.637Z\",\n            \"__v\": 0\n        }\n    ],\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Get One Room",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/room/:roomId",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"room",
+								":roomId"
+							],
+							"variable": [
+								{
+									"key": "roomId",
+									"value": "648b280718854158a39a6bff"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get One Room",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/room/:roomId",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"room",
+										":roomId"
+									],
+									"variable": [
+										{
+											"key": "roomId",
+											"value": "648b280718854158a39a6bff"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "269"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10d-amDaUZIsmjvI21TcujrraY/YLys\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:37:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Room retrieved successfully\",\n    \"data\": {\n        \"_id\": \"648b280718854158a39a6bff\",\n        \"roomNumber\": \"A001\",\n        \"hostelName\": \"New Daniel Hall\",\n        \"capacity\": 3,\n        \"currentOccupancy\": 0,\n        \"createdAt\": \"2023-06-15T15:02:31.949Z\",\n        \"updatedAt\": \"2023-06-15T15:26:09.399Z\",\n        \"__v\": 0\n    },\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Room Capacity",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"capacity\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/room/:roomId",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"room",
+								":roomId"
+							],
+							"variable": [
+								{
+									"key": "roomId",
+									"value": "648b280718854158a39a6bff"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Room Capacity",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"capacity\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/room/:roomId",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"room",
+										":roomId"
+									],
+									"variable": [
+										{
+											"key": "roomId",
+											"value": "648b280718854158a39a6bff"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "267"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10b-ColVJRwlFsF42uZQYWrmbUhyvns\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:38:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Room updated successfully\",\n    \"data\": {\n        \"_id\": \"648b280718854158a39a6bff\",\n        \"roomNumber\": \"A001\",\n        \"hostelName\": \"New Daniel Hall\",\n        \"capacity\": 3,\n        \"currentOccupancy\": 0,\n        \"createdAt\": \"2023-06-15T15:02:31.949Z\",\n        \"updatedAt\": \"2023-06-15T15:38:20.535Z\",\n        \"__v\": 0\n    },\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Room",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/room/:roomId",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"room",
+								":roomId"
+							],
+							"variable": [
+								{
+									"key": "roomId",
+									"value": "648b2adb44341b7d64a6cde5"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Room",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/room/:roomId",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"room",
+										":roomId"
+									],
+									"variable": [
+										{
+											"key": "roomId",
+											"value": "648b2adb44341b7d64a6cde5"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "257"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"101-9p9jfaH2yJpLk+Fa0c7RCIrzgpI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:38:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Room deleted successfully\",\n    \"data\": {\n        \"_id\": \"648b2adb44341b7d64a6cde5\",\n        \"roomNumber\": \"3\",\n        \"hostelName\": \"Daniel 1\",\n        \"capacity\": 6,\n        \"currentOccupancy\": 3,\n        \"createdAt\": \"2023-06-15T15:03:04.515Z\",\n        \"updatedAt\": \"2023-06-15T15:33:13.914Z\",\n        \"__v\": 0\n    },\n    \"success\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Allocation",
+			"item": [
+				{
+					"name": "Auto Allocate Room",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"648b2cc944341b7d64a6cde8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/allocation/allocate-room-auto",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"allocation",
+								"allocate-room-auto"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user\": \"648b2cc944341b7d64a6cde8\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/allocation/allocate-room-auto",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"allocation",
+										"allocate-room-auto"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "398"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18e-Njtj2sW5bi8T4lawiPavy2ye83s\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:32:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Room allocated successfully\",\n    \"data\": {\n        \"user\": {\n            \"_id\": \"648b2cc944341b7d64a6cde8\",\n            \"name\": \"Daniel Okoma\",\n            \"customIdentifier\": \"20010202007\"\n        },\n        \"room\": {\n            \"_id\": \"648b2adb44341b7d64a6cde5\",\n            \"roomNumber\": \"3\",\n            \"hostelName\": \"Daniel 1\",\n            \"capacity\": 6,\n            \"currentOccupancy\": 1\n        },\n        \"_id\": \"648b2f24c01ceddb8fcec0d1\",\n        \"createdAt\": \"2023-06-15T15:32:52.069Z\",\n        \"updatedAt\": \"2023-06-15T15:32:52.069Z\",\n        \"__v\": 0\n    },\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Manually Allocate Room",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"648b267618854158a39a6bf4\",\r\n    \"room\": \"648b282818854158a39a6c03\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/allocation/allocate-room",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"allocation",
+								"allocate-room"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Manually Allocate Room",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user\": \"648b267618854158a39a6bf4\",\r\n    \"room\": \"648b2adb44341b7d64a6cde5\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/allocation/allocate-room",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"allocation",
+										"allocate-room"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "401"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"191-qZaqP5+x+vJl6dHvGV+4aW4zJ18\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:33:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Room allocated successfully\",\n    \"data\": {\n        \"user\": {\n            \"_id\": \"648b267618854158a39a6bf4\",\n            \"name\": \"John Olatubosun\",\n            \"customIdentifier\": \"19010301047\"\n        },\n        \"room\": {\n            \"_id\": \"648b2adb44341b7d64a6cde5\",\n            \"roomNumber\": \"3\",\n            \"hostelName\": \"Daniel 1\",\n            \"capacity\": 6,\n            \"currentOccupancy\": 2\n        },\n        \"_id\": \"648b2f39b9dad13ae74a3de1\",\n        \"createdAt\": \"2023-06-15T15:33:13.877Z\",\n        \"updatedAt\": \"2023-06-15T15:33:13.877Z\",\n        \"__v\": 0\n    },\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Allocations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/allocation/all",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"allocation",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Allocations",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/allocation/all",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"allocation",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "745"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2e9-atsYmibph4KP127auTx3VOMpIYA\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:33:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Allocations retrieved successfully\",\n    \"data\": [\n        {\n            \"_id\": \"648b2f24c01ceddb8fcec0d1\",\n            \"user\": {\n                \"_id\": \"648b2cc944341b7d64a6cde8\",\n                \"name\": \"Daniel Okoma\",\n                \"customIdentifier\": \"20010202007\"\n            },\n            \"room\": {\n                \"_id\": \"648b2adb44341b7d64a6cde5\",\n                \"roomNumber\": \"3\",\n                \"hostelName\": \"Daniel 1\",\n                \"capacity\": 6,\n                \"currentOccupancy\": 3\n            },\n            \"createdAt\": \"2023-06-15T15:32:52.069Z\",\n            \"updatedAt\": \"2023-06-15T15:32:52.069Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"648b2f39b9dad13ae74a3de1\",\n            \"user\": {\n                \"_id\": \"648b267618854158a39a6bf4\",\n                \"name\": \"John Olatubosun\",\n                \"customIdentifier\": \"19010301047\"\n            },\n            \"room\": {\n                \"_id\": \"648b2adb44341b7d64a6cde5\",\n                \"roomNumber\": \"3\",\n                \"hostelName\": \"Daniel 1\",\n                \"capacity\": 6,\n                \"currentOccupancy\": 3\n            },\n            \"createdAt\": \"2023-06-15T15:33:13.877Z\",\n            \"updatedAt\": \"2023-06-15T15:33:13.877Z\",\n            \"__v\": 0\n        }\n    ],\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Allocations In Hostel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/allocation/:hostelName",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"allocation",
+								":hostelName"
+							],
+							"variable": [
+								{
+									"key": "hostelName",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Allocations In Hostel",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/allocation/all/:hostelName",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"allocation",
+										"all",
+										":hostelName"
+									],
+									"variable": [
+										{
+											"key": "hostelName",
+											"value": "Daniel 1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "407"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"197-14JYMWOYDLi2FGb0QR7SnmBWDKY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:49:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Allocations retrieved successfully\",\n    \"data\": [\n        {\n            \"_id\": \"648b32f2e18051d4c1bd8ad9\",\n            \"user\": {\n                \"_id\": \"648b2cc944341b7d64a6cde8\",\n                \"name\": \"Daniel Okoma\",\n                \"customIdentifier\": \"20010202007\"\n            },\n            \"room\": {\n                \"_id\": \"648b282818854158a39a6c03\",\n                \"roomNumber\": \"5\",\n                \"hostelName\": \"Daniel 1\",\n                \"capacity\": 6,\n                \"currentOccupancy\": 1\n            },\n            \"createdAt\": \"2023-06-15T15:49:06.472Z\",\n            \"updatedAt\": \"2023-06-15T15:49:06.472Z\",\n            \"__v\": 0\n        }\n    ],\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Get One Allocation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/allocation/:roomId",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"allocation",
+								":roomId"
+							],
+							"variable": [
+								{
+									"key": "roomId",
+									"value": "648b2f24c01ceddb8fcec0d1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get One Allocation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/allocation/:roomId",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"allocation",
+										":roomId"
+									],
+									"variable": [
+										{
+											"key": "roomId",
+											"value": "648b2f24c01ceddb8fcec0d1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "404"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"194-w+TYEpAt6C9YEkh2wVtmkAMySLA\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:37:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Allocation retrieved successfully\",\n    \"data\": {\n        \"_id\": \"648b2f24c01ceddb8fcec0d1\",\n        \"user\": {\n            \"_id\": \"648b2cc944341b7d64a6cde8\",\n            \"name\": \"Daniel Okoma\",\n            \"customIdentifier\": \"20010202007\"\n        },\n        \"room\": {\n            \"_id\": \"648b2adb44341b7d64a6cde5\",\n            \"roomNumber\": \"3\",\n            \"hostelName\": \"Daniel 1\",\n            \"capacity\": 6,\n            \"currentOccupancy\": 3\n        },\n        \"createdAt\": \"2023-06-15T15:32:52.069Z\",\n        \"updatedAt\": \"2023-06-15T15:32:52.069Z\",\n        \"__v\": 0\n    },\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Get User Allocation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/allocation/user/:userId",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"allocation",
+								"user",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "648b267618854158a39a6bf4"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Unallocated",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/allocation/user/:userId",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"allocation",
+										"user",
+										":userId"
+									],
+									"variable": [
+										{
+											"key": "userId",
+											"value": "648b269a18854158a39a6bf7"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "74"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4a-V0StA0vGAGh0IIyWAS05PSnJ3HY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:40:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Allocation retrieved successfully\",\n    \"data\": null,\n    \"success\": true\n}"
+						},
+						{
+							"name": "Allocated",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/allocation/user/:userId",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"allocation",
+										"user",
+										":userId"
+									],
+									"variable": [
+										{
+											"key": "userId",
+											"value": "648b267618854158a39a6bf4"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "407"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"197-8MezjLOMRuX7SqK4QYg9B75wAOE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:40:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Allocation retrieved successfully\",\n    \"data\": {\n        \"_id\": \"648b30c0b9dad13ae74a3e0e\",\n        \"user\": {\n            \"_id\": \"648b267618854158a39a6bf4\",\n            \"name\": \"John Olatubosun\",\n            \"customIdentifier\": \"19010301047\"\n        },\n        \"room\": {\n            \"_id\": \"648b282818854158a39a6c03\",\n            \"roomNumber\": \"5\",\n            \"hostelName\": \"Daniel 1\",\n            \"capacity\": 6,\n            \"currentOccupancy\": 2\n        },\n        \"createdAt\": \"2023-06-15T15:39:44.558Z\",\n        \"updatedAt\": \"2023-06-15T15:39:44.558Z\",\n        \"__v\": 0\n    },\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete One Allocation",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/allocation/:allocationId",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"allocation",
+								":allocationId"
+							],
+							"variable": [
+								{
+									"key": "allocationId",
+									"value": "648b30b1b9dad13ae74a3e04"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete One Allocation",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/allocation/:allocationId",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"allocation",
+										":allocationId"
+									],
+									"variable": [
+										{
+											"key": "allocationId",
+											"value": "648b30b1b9dad13ae74a3e04"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "402"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"192-tKlJ5rKa2TdGS5A0CBM+159w/m4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:45:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Allocation deleted successfully\",\n    \"data\": {\n        \"_id\": \"648b30b1b9dad13ae74a3e04\",\n        \"user\": {\n            \"_id\": \"648b2cc944341b7d64a6cde8\",\n            \"name\": \"Daniel Okoma\",\n            \"customIdentifier\": \"20010202007\"\n        },\n        \"room\": {\n            \"_id\": \"648b282818854158a39a6c03\",\n            \"roomNumber\": \"5\",\n            \"hostelName\": \"Daniel 1\",\n            \"capacity\": 6,\n            \"currentOccupancy\": 2\n        },\n        \"createdAt\": \"2023-06-15T15:39:29.827Z\",\n        \"updatedAt\": \"2023-06-15T15:39:29.827Z\",\n        \"__v\": 0\n    },\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete All Allocations",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/allocation/all",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"allocation",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete All Allocations",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/allocation/all",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"allocation",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "107"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6b-QNUo3AQhZF2iljuAmpHE3clO/X8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Jun 2023 15:46:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Allocations deleted successfully\",\n    \"data\": {\n        \"acknowledged\": true,\n        \"deletedCount\": 1\n    },\n    \"success\": true\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{AUTH_TOKEN}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:8000",
+			"type": "default"
+		},
+		{
+			"key": "AUTH_TOKEN",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OGIyNjlhMTg4NTQxNThhMzlhNmJmNyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4Njg0MTA4Mn0.mgkbBMRtWZKYQ-UzsjGGPnZoCzecE13lx3cJ-1eYMa8",
+			"type": "default"
+		}
+	]
+}
